@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+</head>
+<script>
+    // Global script
+    alert("Hello");
+</script>
+<!-- Using external javascript -->
+<script src = "Ext_function.js"></script>
+<body>
+    <script>
+        // Internal Script
+        alert("Buttons");
+        function log() {
+            console.log("Console Logging")
+        };
+        log();
+    </script>
+    <input type = 'text' id = 'Note'>Click
+    <!-- inline script -->
+    <!-- Calling external Function Show() -->
+    <button id = 'b1' onclick="alert ('Clicked'),Show()">Button1</button>
+
+</body>
+</html>

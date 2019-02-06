@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="test.js"></script>
+</head>
+<body>
+    <!-- ctrl /   global script.
+     -->
+     <!-- internal script -->   
+    <script>
+        alert('global script');
+        function test(){
+            console.log("test invoked");
+        };
+    </script>
+    <input type="text" id="note">
+    <!-- inline script -->
+    <button onclick="test1()">Click</button>
+    <button onclick='test();');">Click1</button>
+</body>
+<script>
+        alert('global script1');
+    </script>
+</html>

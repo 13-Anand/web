@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+            <h1>Session Storage Demo</h1>
+        </header>  
+        Hit Counter : 
+        <div id="content">This is the content.</div>
+
+        <script>
+
+            if (!sessionStorage['counter']) {
+                sessionStorage['counter'] = 0;
+            } else {
+                sessionStorage['counter']++;
+            }
+            document.querySelector('#content').innerHTML = 
+            '<b><p>You have visited ' + sessionStorage.getItem('counter') + 
+            ' time(s)</p></b>';
+        </script>
+    </body>    
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            alert("Radio");
+        </script>
+        <header>
+            <h1>Local Storage Demo</h1>
+        </header>  
+        <h1>
+            Radio Buttons
+        </h1>
+        Choose a Number :
+        <div id="content1">
+            <form>
+                <select id ='choice'>
+                    <option value = '1'>1</option>
+                    <option value = '2'>2</option>
+                    <option value = '3'>3</option>
+                    <option value = '4'>4</option>
+                    <option value = '5'>5</option>
+                </select>
+            </form>
+        </div>
+        <script>       
+            var c;
+            //var TextArea = document.createElement('textarea');
+            //TextArea.style.width = '200px';
+            //TextArea.style.height = '20px';
+            //document.querySelector('#content1').appendChild(TextArea);
+            //var selection = document.getElementById('choice').value;
+            //selection.value = window.localStorage.getItem('choice2');
+            var selection = document.getElementById('value1');
+            selection.addEventListener('change', function()
+            {
+                localStorage.setItem('value1', selection.value);
+                console.log("RADIO");
+                console.log(value1);
+                display();
+            });
+            //if (!selection.value) {
+            //    var i;
+                //Fetching the content from Local Storage
+            //    selection.value = window.localStorage.getItem('choice1');
+            //}
+            //document.getElementById("choice").onchange = display;
+            function display() {
+                for (i = 1; i<=c; i++)
+                {
+                    alert(i);
+                }
+                }
+            //     //Saving the content to Local Storage
+            //     window.localStorage.setItem('preference', myTextArea.value);
+            //     window.localStorage.setItem('choice', myTextArea.value);
+            //     null;
+
+            // }, false);
+            //myTextArea.addEventListener("keyup",function(){
+            //  test();
+            //})
+        </script>
+    </body>    
+</html>

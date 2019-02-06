@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            alert("execuetes");
+            
+            function test(){
+                alert("Inside function");
+            }</script>
+
+        <header>
+            <h1>Local Storage Demo</h1>
+        </header>  
+        <h1>
+            Storing user preferences using localStorage.
+        </h1>
+        Enter your preferred language :
+        div
+        <div id="content"></div>
+ div
+        <script>       
+            var myTextArea = document.createElement('textarea');
+            myTextArea.style.width = '200px';
+            myTextArea.style.height = '20px';
+            document.querySelector('#content').appendChild(myTextArea);
+
+
+            if (!myTextArea.value) {
+                //Fetching the content from Local Storage
+                myTextArea.value = window.localStorage.getItem('preference');
+            }
+      
+            // myTextArea.addEventListener('keyup', function() {
+            //     //Saving the content to Local Storage
+            //     window.localStorage.setItem('preference', myTextArea.value);
+            //     window.localStorage.setItem('choice', myTextArea.value);
+            //     null;
+
+            // }, false);
+            myTextArea.addEventListener("keyup",function(){
+                test();
+            })
+        </script>
+    </body>    
+</html>
