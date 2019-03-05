@@ -16,6 +16,8 @@ export class MainpageComponent implements OnInit {
     if (this.login === 'Admin' && this.password === 'Admin123') {
       console.log('Working');
       this.router.navigate(['Adminpage']);
+    } else {
+      alert('Invalid credentials!!');
     }
   }
 }
