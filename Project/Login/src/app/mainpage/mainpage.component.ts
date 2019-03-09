@@ -17,7 +17,7 @@ export class MainpageComponent implements OnInit {
       console.log('Working');
       this.router.navigate(['Adminpage']);
     } else {
-      alert('Invalid credentials!!');
+      this.router.navigate(['user']);
     }
   }
 }
